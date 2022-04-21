@@ -1,0 +1,48 @@
+<html>
+    <head>
+     <title>TodoList</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" 
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        
+        <header >
+            <h1> لیست کارهای روزانه</h1>
+         </header>
+       <section class="container">
+         <div class="form-container">
+           <button class="showModal">افزودن  برنامه جدید روزانه</button>
+             <div class="select">
+                 <select class="filter-todos" name="todos">
+                     <option class="all" value="all">همه</option>
+                     <option class="completed" value="completed">انجام شده ها</option>
+                     <option class="uncompleted" value="uncompleted">انجام نشده</option>
+                 </select>
+             </div>
+             <button class="deletAll">حذف همه </button>
+             
+         </div> 
+         <div class="todo-container">
+            <ul class="todoList"></ul>
+            
+         </section>
+      
+       <div class="Modal">
+        <h4>  اضافه کردن برنامه جدید </h4>
+        <form >
+           
+            <input type="text" placeholder="please write something" class="TodoInput">
+            <button class="add-btn">
+                <i class="fa-solid fa-circle-plus"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </form>
+    </div>
+    <div class="Backdrop"></div>
+<script src="./index.js" ></script>
+    </body>
+</html>
